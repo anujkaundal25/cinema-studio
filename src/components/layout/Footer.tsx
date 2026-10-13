@@ -55,7 +55,7 @@ export default function Footer() {
               href="/"
               className="font-syncopate text-xl font-bold tracking-widest uppercase text-white transition-colors duration-300 hover:text-[#FF0000] sm:text-2xl md:text-3xl"
             >
-              Cinema Art
+              Cinema Art Studio
             </Link>
           </div>
 

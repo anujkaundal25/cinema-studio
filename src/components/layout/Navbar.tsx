@@ -125,7 +125,7 @@ export default function Navbar() {
               href="/"
               className="text-xl font-bold tracking-widest hover:text-[#FF0000] transition-colors duration-300 uppercase sm:text-2xl md:text-3xl"
             >
-              <h1>Cinema Art</h1>
+              <h1>Cinema Art Studio</h1>
             </Link>
           </div>
 

@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <HeroSection/>
       <PrintingServices />
-      <Category/>
+      {/* <Category/> */}
       <Brand/>
       <Use />
       <Footer />
