@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Loader from "@/components/ui/Loader";
 import HeroSection from "@/components/home/HeroSection";
 import PrintServices from "@/components/home/PrintServices";
+import PrintCaseStudy from "@/components/home/PrintCaseStudy";
 export default function Home() {
   return (
     <main className="relative bg-background">
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <HeroSection/>
       <PrintServices/>
+      <PrintCaseStudy/>
       <Footer />
     </main>
   );
