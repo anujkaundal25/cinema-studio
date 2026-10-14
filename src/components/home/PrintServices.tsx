@@ -30,14 +30,15 @@ function PrintServices() {
         
         {/* Left Content Column - Printing Services Cards */}
         <div className="lg:col-span-7 flex flex-col gap-6">
-          <div>
+          <div className='flex'>
             <h1 className="text-3xl md:text-4xl font-bold text-[#FF0000] mb-6">Our Printing Services</h1>
+            <img src="/home/design.png" alt="" className='block lg:hidden h-42' />
           </div>
           <div className='absolute'>
-            <img src="/home/design.png" alt="" className='relative z-10 -left-55 -bottom-43 h-42' />
+            <img src="/home/design.png" alt="" className='hidden lg:block relative z-10 -left-55 -bottom-43 h-42' />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-[url('/home/print-bg.svg')] bg-center">
             {printingServices.map((service) => (
               <div 
                 key={service.id} 
@@ -59,7 +60,7 @@ function PrintServices() {
           {/* First Image */}
           <div className="w-1/2 relative rounded-2xl overflow-hidden shadow-xl">
             <img 
-              src="/home/print1.png" 
+              src="/home/print1.webp" 
               alt="Printing service worker" 
               className="w-full h-80 md:h-96 object-cover rounded-2xl"
             />

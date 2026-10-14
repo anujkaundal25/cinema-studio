@@ -60,15 +60,29 @@ export default function PrintCaseStudy() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
 
-              {/* Red gradient and title appear on active image */}
+              {/* Red gradient and overlay */}
               <div
                 className={`absolute inset-0 transition-all duration-500 ${
                   isActive
-                    ? 'bg-gradient-to-t from-red-600 via-red-600/50 to-transparent'
+                    ? 'bg-gradient-to-t from-[#FF0000] via-[#FF0000]/20 to-transparent'
                     : 'bg-black/10'
                 }`}
               />
 
+              {/* Number badge at top-left corner (shows only when active) */}
+              <div
+                className={`absolute left-4 top-4 transition-all duration-500 sm:left-6 sm:top-6 ${
+                  isActive
+                    ? 'translate-y-0 opacity-100'
+                    : '-translate-y-5 opacity-0'
+                }`}
+              >
+                <span className="rounded-sm bg-white p-2 text-xs font-bold text-[#FF0000] sm:text-sm">
+                  {item.Num}
+                </span>
+              </div>
+
+              {/* Title at bottom */}
               <div
                 className={`absolute inset-x-0 bottom-0 p-4 text-center transition-all duration-500 sm:p-6 ${
                   isActive
@@ -76,7 +90,7 @@ export default function PrintCaseStudy() {
                     : 'translate-y-5 opacity-0'
                 }`}
               >
-                <h3 className="text-lg font-bold leading-tight text-white sm:text-2xl md:text-4xl">
+                <h3 className="text-sm font-bold leading-tight text-white sm:text-2xl md:text-4xl">
                   {item.label}
                 </h3>
               </div>
