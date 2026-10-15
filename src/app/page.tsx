@@ -7,6 +7,7 @@ import PrintCaseStudy from "@/components/home/PrintCaseStudy";
 import Category from "@/components/home/Category";
 import WhyUs from "@/components/home/WhyUs";
 import ShowCase from "@/components/home/ShowCase";
+import Use from "@/components/home/Use";
 export default function Home() {
   return (
     <main className="relative">
@@ -18,6 +19,7 @@ export default function Home() {
       <Category/>
       <WhyUs/>
       <ShowCase/>
+      <Use/>
       <Footer />
     </main>
   );

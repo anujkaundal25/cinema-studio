@@ -48,9 +48,6 @@ function Use() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 flex flex-col justify-between gap-3 sm:mb-10 sm:flex-row sm:items-end">
           <div>
-            <p className="mb-2 font-space text-xs uppercase tracking-[0.2em] text-black/55">
-              Find your frame
-            </p>
             <h2 id="use-section-title" className="text-3xl font-bold tracking-normal sm:text-5xl">
               Made for every way you create
             </h2>
@@ -83,7 +80,7 @@ function Use() {
               </p>
             </div>
 
-            <div className="mt-9 flex items-center justify-between gap-4 border-t border-white/35 pt-5 sm:mt-12">
+            <div className="mt-9 flex items-center justify-between gap-4 border-t border-white pt-5 sm:mt-12">
               <div className="flex items-center gap-2" aria-label="Choose a use case">
                 {useCases.map((useCase, index) => (
                   <button
@@ -104,7 +101,7 @@ function Use() {
                   type="button"
                   onClick={showPrevious}
                   aria-label="Previous use case"
-                  className="flex size-11 items-center justify-center border border-white/55 transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  className="flex size-11 cursor-pointer items-center justify-center border border-white/55 transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   <ChevronLeft aria-hidden="true" size={20} />
                 </button>
@@ -112,7 +109,7 @@ function Use() {
                   type="button"
                   onClick={showNext}
                   aria-label="Next use case"
-                  className="flex size-11 items-center justify-center border border-white/55 transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  className="flex size-11 cursor-pointer items-center justify-center border border-white/55 transition-colors hover:bg-white hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   <ChevronRight aria-hidden="true" size={20} />
                 </button>
